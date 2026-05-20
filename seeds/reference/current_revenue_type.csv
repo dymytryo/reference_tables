@@ -1,0 +1,4 @@
+revenue_type_id,revenue_type,description,updated_by
+1,Transaction,Revenue from payment transactions,jane.doe@company.com
+2,Subscription,Revenue from recurring subscriptions,jane.doe@company.com
+3,Float,Revenue from float on held funds,jane.doe@company.com

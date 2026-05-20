@@ -1,0 +1,6 @@
+product_id,product_type,product_category,description,updated_by
+1,SaaS,Subscription,Software as a service subscription,john.smith@company.com
+2,API Access,Subscription,API access subscription tier,john.smith@company.com
+3,Transaction Fee,Transaction,Per-transaction processing fee,john.smith@company.com
+4,Premium Support,Subscription,Premium support add-on,john.smith@company.com
+5,Data Export,Transaction,Data export service fee,john.smith@company.com

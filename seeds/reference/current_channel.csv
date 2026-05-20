@@ -1,0 +1,7 @@
+channel_id,channel_type,subchannel_type,description,updated_by
+1,Direct,SMB,Direct small business,jane.doe@company.com
+2,Direct,Mid-Market,Direct mid-market accounts,jane.doe@company.com
+3,Direct,Enterprise,Direct enterprise accounts,jane.doe@company.com
+4,Partner,Reseller,Partner reseller channel,jane.doe@company.com
+5,Partner,Referral,Partner referral channel,jane.doe@company.com
+6,Marketplace,Marketplace,Online marketplace,jane.doe@company.com

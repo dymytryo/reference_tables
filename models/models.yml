@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_raw_revenue
+    description: "Simulated raw revenue data with unstandardized values"
+
+  - name: revenue_classified
+    description: >
+      Silver-layer revenue model. Classifies raw data using CASE statements
+      and resolves dimension labels via snapshot reference table joins.
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "revenue_type is not null"
+          config:
+            severity: warn
+            description: "Unmapped revenue_type_id - check CASE logic and current_revenue_type.csv"
+      - dbt_utils.expression_is_true:
+          expression: "channel_type is not null"
+          config:
+            severity: warn
+            description: "Unmapped channel_id - check CASE logic and current_channel.csv"
+
+  - name: channel_as_of_date
+    description: "Point-in-time view of the channel taxonomy"
+
+  - name: channel_audit_trail
+    description: "Full SCD2 history of channel reference table changes"
